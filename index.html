@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quize App</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', Arial, sans-serif; }
+      .hero { background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80')no-repeat 50% 0; }
+      .hero .content { background: rgba(0,0,0,0.45); padding: 36px; border-radius: 12px; }
+      .hero h1, .hero p { color: #fff; }
+      .hero h1 { font-size: 40px; margin: 0 0 12px; }
+      .hero p { margin: 0 0 20px; font-size: 18px; color: #e6eef9; }
+      .cta-group { display:flex; gap:12px; flex-wrap:wrap; }
+      .cta-group .button { background: #06b6d4; border-radius: 8px; padding: 10px 16px; color: white; text-decoration: none; }
+      .cta-group .button:hover { background: #0891b2; }
+      
+      
+      body.dark-mode .hero { background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80')no-repeat 50% 0; }
+      body.dark-mode .hero .content { background: rgba(0,0,0,0.65); }
+      body.dark-mode .hero h1, body.dark-mode .hero p { color: #e0e0e0; }
+      body.dark-mode .cta-group .button { background: #3b82f6; }
+      body.dark-mode .cta-group .button:hover { background: #2563eb; }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar"><h1>Quize App</h1>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+       <div class="nav-links">
+         <a href="Home Page.html">Home</a>
+         <a href="about.php">About</a>
+         <a href="services.php">Services</a>
+         <a href="contact.php">Contact</a>
+         <a href="leaderboard.php">Leaderboard</a>
+         <a href="logout.php">Sign Out</a>
+       </div>
+    </div>
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="card content" style="max-width:900px; margin: 40px auto; text-align:left;">
+          <h1>Sharpen your skills with quick, focused quizzes</h1>
+          <p>Take short, randomized quizzes and get instant feedback. Perfect for learning on the go or preparing for interviews and exams.</p>
+          <div class="cta-group">
+            <a class="button" href="check_answers.php">Start Quiz</a>
+            <a class="button" href="indexe.php">Add Question</a>
+            <a class="button" href="about.php">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/nav.js"></script>
+    <script src="js/darkmode.js"></script>
+    </body>
+    </html>
